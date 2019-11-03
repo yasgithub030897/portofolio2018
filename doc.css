@@ -1,0 +1,181 @@
+/* Mon footer reste toujours en bas  */
+html,body{
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+.container{
+  height: auto;
+}
+footer{
+  display: table-row;
+  height: 1px;
+  font-size: 1.2em;
+}
+footer .container{
+display: flex;
+justify-content: space-between;
+}
+i{
+  font-size: 1.2em;
+  color:#0EF015;
+  display: block;
+}
+
+footer .container p:nth-child(2){
+  margin-right: 80px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+/*Mise en forme de ma barre de navigation*/
+#barre_de_navigation{
+  background-color: black;
+  height: auto;
+  color: silver;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3em;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  opacity: 0.6;
+}
+.element_du_menu{ /* lien de mon menu de navigation*/
+color: silver;
+text-decoration: none;
+}.element_du_menu:hover{
+border-top:4px solid green;
+color: rgb(128,255,0);
+transition-duration: 0.5s;
+}
+header{ /*Contient le mot yascodeur (analyste && programmer) */
+padding: 30px;
+text-align: center;
+cursor: pointer;
+}
+#world_codeur{
+  transition-duration: 2s;
+  color: #0EF015;
+  font-size: 1.1em;
+}
+.world_green{ /* pour tous les mots afficher en vert*/
+color: #0EF015;
+}
+
+nav{
+width: auto;
+}
+nav ul{
+margin: 0;
+height: 100%;
+width: 500px;
+padding-left: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+list-style: none;
+}
+/*Mes sections*/
+section{
+width: 80%;
+height: auto;
+border-radius: 5px;
+margin:auto;
+
+
+}
+#barre_de_navigation + section{ /*Ma première section(page accueil)*/
+/*background-color: rgb(245,245,245);*/
+display: flex;
+justify-content: space-between;
+text-align: center;
+flex-wrap: wrap;
+background-color: rgb(245,245,245);
+padding: 50px;
+
+}
+/*tous les div contenu dans ma section1(page accueil)*/
+#barre_de_navigation + section .element_section{
+width: 300px;
+height: auto;
+
+}
+div h1{
+font-size: 2.5em;
+}
+h2 +p{
+  font-weight: bold;
+}
+.btn_cv{
+background-color: #0EF015;
+color: white;
+height: 50px;
+width: 150px;
+border-radius: 10px;
+box-shadow: 5px 2px 5px green;
+cursor: pointer;
+}.btn_cv:hover{
+transform: scale(1.1);
+transition-duration: 1.2s;
+box-shadow: 5px 2px 5px green;
+}
+/*seconde section (page accueil)*/
+#barre_de_navigation + section+section{
+width: 90%;
+display: flex;
+justify-content: space-around;
+}
+section dl:nth-child(1),section dl:nth-child(2){
+  border-right: 2px dashed black;
+}
+dt{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+/*Page de cv*/
+.cv{
+  margin: 0;
+  margin: auto;
+}
+#barre_de_navigation + .cv{
+  padding: 15px;
+
+}
+#barre_de_navigation + section #contenu_cv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#barre_de_navigation + section #contenu_cv #lisere{
+  height:100%;
+  width: 100px;
+  border:2px solid blue;
+  display: flex;
+  overflow: hidden;
+
+  /*background-color:blue;*/
+
+}
+#biographie{
+  width:auto;
+
+}
+img[alt="ma_photo"]{
+  width: 120px;
+
+}
+
+
+/*page projet   */
+.element_projet{
+  background-color: blue;
+}
+
+
+
